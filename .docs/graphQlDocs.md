@@ -15,3 +15,13 @@
       }
     }
     ```
+- Find All
+  ```graphql
+  query queryCategories {
+    categories {
+      id
+      name
+      description
+    }
+  }
+  ```
