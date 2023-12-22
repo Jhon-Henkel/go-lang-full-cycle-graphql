@@ -10,7 +10,8 @@ Para rodar o projeto é necessário dar start no server e criar as tabelas no ba
 - Criar as tabelas no banco de dados:
   ```sh
   sqlite3 database.db;
-  create table categories (id string, name string, description string);
+  CREATE TABLE categories (id string, name string, description string);
+  CREATE TABLE courses (id string, name string, description string, category_id string);
   ```
 
 ## Documentação API 

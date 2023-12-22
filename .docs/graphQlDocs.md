@@ -25,3 +25,33 @@
     }
   }
   ```
+  
+## Courses
+- New Course:
+    ```graphql
+    mutation createCourse {
+      createCourse(
+        input: {
+          name: "Go Expert"
+          description: "Torne-se expert em Go-lang"
+          categoryId: "bfa339a2-af2e-4af9-a7a0-16c57b1e82ea"
+        }
+      )
+      {
+        id
+        name
+        description
+      }
+    }
+    ```
+  
+- Find All
+    ```graphql
+    query queryCouses {
+      courses {
+        id
+        name
+        description
+      }
+    }
+    ```
