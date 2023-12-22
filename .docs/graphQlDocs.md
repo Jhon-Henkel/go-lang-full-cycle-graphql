@@ -70,3 +70,19 @@
       }
     }
     ```
+  
+- Find All with Category
+    ```graphql
+        query queryCoursesWithCategory {
+      courses {
+        id
+        name
+        description
+        category {
+          id
+          name
+          description
+        }
+      }
+    }
+    ```
