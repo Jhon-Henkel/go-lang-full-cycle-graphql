@@ -26,6 +26,21 @@
   }
   ```
   
+- Find All with Courses
+  ```graphql
+  query queryCategoryWithCourses {
+    categories {
+      id
+      name
+      description
+      courses {
+        id
+        name
+      }
+    }
+  }
+  ```
+  
 ## Courses
 - New Course:
     ```graphql
